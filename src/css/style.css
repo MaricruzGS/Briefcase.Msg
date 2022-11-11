@@ -1,0 +1,419 @@
+
+@import url('https://fonts.googleapis.com/css2? family= Rubik:wght@600 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
+:root {
+   --black: #020403;
+   --blackclar: #121614;
+   --gray: #adadad;
+   --white: #FFFFFF;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  color: #FFFFFF;
+}
+
+body {
+  background-color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  min-height: 15vh;
+}
+
+.navbar {
+  background-color: var(--black);
+  height: 50px;
+  padding: 0 1rem;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  position: fixed;
+  background-color: var(--black);
+  top: 50px;
+  left: 0;
+  width: 50%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  transform: translateX(-150%);
+  transition: transform 0.5s;
+}
+
+.menu-show {
+  transform: translateX(0);
+}
+
+.bx-menu {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.home {
+    padding: 5rem;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.me__home {
+  border-radius: 50%;
+}
+
+.home__name {
+  color: var(--gray);
+  font-size: 26px;
+}
+
+.home__profession {
+  font-size: 40px;
+  text-align: center;
+}
+
+.home__icon {
+    padding: 1rem;
+    display: flex;
+    align-content: center;
+    gap: 5rem;
+    height: 1rem;
+}
+
+.about_me {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.circle {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.circle1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  background: transparent;
+  
+  position: absolute;
+
+} 
+
+.circle2 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  background: transparent;
+  position: absolute;
+  
+ margin: 10px;
+} 
+
+.circle3 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  background: transparent;
+  position: absolute;
+
+  margin: 25px;
+} 
+
+.presentation {
+  font-size: 25px;
+  
+}
+
+.my__skills {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title--skills {
+  line-height: 1px;
+}
+
+.each--skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+}
+
+.form--skill {
+  background-color: var(--blackclar);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience {
+  text-align: center;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.circle__two {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  inline-size: 3rem;
+  padding-bottom: 7rem;
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  background-color: var(--gray);
+}
+
+.board__experience {
+  display: flex;
+  justify-content: left;
+  gap: 5rem; 
+  padding: 1rem 0rem;
+}
+
+.date__experiencie {
+  color: var(--gray);
+}
+
+.text__experience {
+  text-align: left;
+  text-indent: 3rem;
+}
+
+.paragraph__experiencie {
+  color: var(--gray);
+}
+
+.briefcase {
+  padding: 1rem;
+}
+
+.icon__briefcase{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact {
+ text-align: left;
+ padding: 1rem 1rem;
+ gap: 1rem;
+}
+
+.icon__contact {
+  padding: 1rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 7rem;
+}
+
+.form--contact {
+  background-color: var(--black);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.1rem;
+  
+  display: grid;
+  grid-column: 2;
+  grid-row: 4;
+  justify-content: center;
+  align-items: center;
+}
+
+.date__contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1.4rem;
+}
+
+.contact--date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2rem;
+  
+}
+
+.contact--email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2rem;
+}
+
+.footer__made {
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 800px) {
+
+  .bx-menu {
+    display: none;
+  }
+
+  .menu {
+    position: static;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    transform: translateX(0);
+  }
+
+  .name {
+    color: var(--gray);
+    font-size: 25px;
+  }
+  
+  .home__profession {
+    font-size: 70px;
+    text-align: center;
+  }
+
+ .home__icon {
+  height: 1rem;
+}
+
+  .presentation {
+    font-size: 40px;
+
+  }
+
+ .presentation__contect {
+    font-size: 18px;
+  }
+ 
+ .title--skills {
+  padding: 2rem 2rem;
+  font-size: 40px;
+  text-align: center;
+ }
+
+.icon__skills  {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 40vh;
+}
+
+.each--skill {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 40vh;
+}
+
+.title__experiencie {
+  font-size: 40px;
+  line-height: 0.1rem;
+}
+
+.board {
+  padding: 5rem;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+}
+
+.text__experience {
+  text-indent: 14rem;
+  font-size: 18px;
+}
+
+.name__briefcase {
+  text-align: center;
+  font-size: 40px;
+}
+
+.photo__briefcase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__title {
+  text-align: center;
+  font-size: 40px;
+  line-height: 5rem;
+}
+
+.icon__contact {
+  gap: 13rem;
+}
+
+.date__contact {
+  gap: 1rem 7rem;
+}
+
+.footer__made {
+  font-size: 1.3rem;
+}
+
+}
